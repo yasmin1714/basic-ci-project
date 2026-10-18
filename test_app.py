@@ -1,5 +1,5 @@
 import unittest
-from app import add, multiply
+from app import add, multiply, subtract
 
 
 class TestApp(unittest.TestCase):
@@ -12,6 +12,9 @@ class TestApp(unittest.TestCase):
 
     def test_add_negative_numbers(self):
         self.assertEqual(add(-5, -3), -8)
+
+    def test_subtract(self):
+        self.assertEqual(subtract(10, 4), 6)
 
 
 if __name__ == "__main__":
